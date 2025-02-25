@@ -1,15 +1,23 @@
 /*
-Write a ‘sendOrder’ command-line application.
+
+Write an ‘exchange’ command-line application:
 o Start-up arguments:
-    o A username;
-    o Middleware endpoint;
-    o A SIDE (‘BUY’ or ‘SELL’);
-    o A QUANTITY (an integer). For this assignment, the quantity will be fixed at 100
-      shares on every order;
-    o A price (a double).
+    o Middleware endpoint.
 o Behaviour:
-This program should simply start up, connect to the endpoint, submit its order
-to the ‘orders’ topic and then exit immediately.
+    o Subscribe to the ‘orders’ topic;
+    o Whenever it receives an order:
+    
+• If there is a matching opposite-side order with an acceptable price for
+this order (the buyer’s price is acceptable to the seller or vice versa),
+then:
+o Take that order out of the order book and publish trade
+information to the ‘trades’ topic;
+
+• If there is no suitable order, then add the order to the order book.
+• You may find it useful to explore the tooling that the chosen middleware solution offers for
+printing the contents of a topic.
+• The team is free to choose the most suitable data structure for the order book.
+
 */
 
 var amqp = require('amqplib/callback_api');
