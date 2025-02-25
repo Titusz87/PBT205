@@ -1,3 +1,17 @@
+/*
+Write a ‘sendOrder’ command-line application.
+o Start-up arguments:
+    o A username;
+    o Middleware endpoint;
+    o A SIDE (‘BUY’ or ‘SELL’);
+    o A QUANTITY (an integer). For this assignment, the quantity will be fixed at 100
+      shares on every order;
+    o A price (a double).
+o Behaviour:
+This program should simply start up, connect to the endpoint, submit its order
+to the ‘orders’ topic and then exit immediately.
+*/
+
 var amqp = require('amqplib/callback_api');
 //const { logger } = require('./loggerService') // do we want this??
 
