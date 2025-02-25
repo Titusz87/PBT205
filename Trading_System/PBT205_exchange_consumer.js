@@ -1,5 +1,7 @@
 /*
 
+TO DO:
+
 Write an ‘exchange’ command-line application:
 o Start-up arguments:
     o Middleware endpoint.
