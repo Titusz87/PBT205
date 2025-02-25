@@ -12,6 +12,10 @@ o Behaviour:
 This program should simply start up, connect to the endpoint, submit its order
 to the ‘orders’ topic and then exit immediately.
 
+Final Product
+• Expose a simple GUI interface that displays the latest price at which XYZ Corp traded.
+• Extend the functionality to allow for multiple stocks.
+
 */
 
 #!/usr/bin/env node
