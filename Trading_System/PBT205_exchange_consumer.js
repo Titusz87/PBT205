@@ -25,7 +25,7 @@ Final Product
 */
 
 var amqp = require('amqplib/callback_api');
-//const { logger } = require('./loggerService') // do we want this??
+//const { logger } = require('./loggerService') // ! We can add this logger object to make the code bit cleaner
 
 var connectionString = `amqp://${encodeURIComponent('admin')}:${encodeURIComponent('GoLLy7710')}@vanelsen.chickenkiller.com:5672`;
 const QUEUE = "Orders";
