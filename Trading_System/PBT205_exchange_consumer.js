@@ -18,6 +18,10 @@ information to the ‘trades’ topic;
 printing the contents of a topic.
 • The team is free to choose the most suitable data structure for the order book.
 
+Final Product
+• Expose a simple GUI interface that displays the latest price at which XYZ Corp traded.
+• Extend the functionality to allow for multiple stocks.
+
 */
 
 var amqp = require('amqplib/callback_api');
