@@ -1,0 +1,13 @@
+Task 2 Instructions—Trading System
+
+Specification
+
+You will be modelling a very simple market and exchange in which there is only one stock (XYZ Corp).
+All orders must have a desired price expressed on the order (this should be distinguished from ‘market
+orders’ in industry).
+
+This will be enabled by two (2) actors:
+1. The Exchange: There can only be one (1) exchange. It is responsible for matching orders from
+traders against one another and publishing ‘done trades’ along with the price they were
+traded at; and
+2. The Trader: There can be multiple traders, each with a unique identifier.
