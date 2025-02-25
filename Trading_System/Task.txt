@@ -11,3 +11,7 @@ This will be enabled by two (2) actors:
 traders against one another and publishing ‘done trades’ along with the price they were
 traded at; and
 2. The Trader: There can be multiple traders, each with a unique identifier.
+
+Final Product
+• Expose a simple GUI interface that displays the latest price at which XYZ Corp traded.
+• Extend the functionality to allow for multiple stocks.
