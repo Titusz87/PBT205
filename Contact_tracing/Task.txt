@@ -1,0 +1,18 @@
+Task 3 Instructions—Contact Tracing
+
+Specification
+
+You are modelling a given environment as a two-dimensional system of coordinates (like a very large
+chess board). The virtual size of the board is 10 x 10, but should be configurable for up to 1,000 x 1,000.
+You and your colleagues will start at a randomised position in this environment and can move one
+square only in any direction (similar to a King’s movement in chess). 
+
+Each person will have a unique identifier (for simplicity, you can simply use a first name as an identifier in this environment (provided that the name is unique) to monitor the activity.
+
+Your role is to list colleagues that you have come into contact with (i.e., other people who have
+occupied the same square at the same time).
+
+Unlike chess, multiple people can occupy a single square simultaneously and there is no concept of
+‘rounds‘ (in which each player is allowed to make a single move, turn by turn). Further, each person
+can frequent the same square as often as they wish and can move to new squares as frequently as
+they wish.

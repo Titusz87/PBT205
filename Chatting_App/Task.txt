@@ -1,0 +1,12 @@
+Task 1 Instructions—Chatting Application
+
+Specification
+
+This basic command-line chat application (app) allows multiple chat participants to send and receive
+messages from a room.
+
+Tasks
+• Set up your middleware.
+• Set up a new topic on the middleware named ‘room’ (or something equivalent).
+o (Note: Keep this portion flexible and re-usable. You will need to create topics for every
+subsequent assignment).
