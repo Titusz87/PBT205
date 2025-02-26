@@ -31,7 +31,6 @@ var amqp = require('amqplib/callback_api');
 
 var connectionString = `amqp://${encodeURIComponent('admin')}:${encodeURIComponent('GoLLy7710')}@vanelsen.chickenkiller.com:5672`;
 const QUEUE = "Orders";
-let acceptable_price = true;
 
 const exchange = function (middleware_endpoint) {
     console.log("Attempting to connect to RabbitMQ...");
@@ -52,7 +51,7 @@ const exchange = function (middleware_endpoint) {
             let queue = QUEUE;
 
             channel.assertQueue(queue, {
-                durable: false
+                durable: true               // has been changed to true to avoid loosing messages
             }, function (error2, ok) {
                 if (error2) {
                     console.error("Error asserting queue:", error2);
@@ -116,7 +115,7 @@ const matchOrders = function(orderBook ,channel){
             
                 // Publish trade object to the "Trades" queue
                 channel.assertQueue("Trades", {
-                    durable: false
+                    durable: true               // changed to true
                 }, function(error2, ok) {
                     if (error2) {
                         console.error("Error asserting queue:", error2);
