@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*
 
 Write a ‘sendOrder’ command-line application.
@@ -17,8 +19,6 @@ Final Product
 • Extend the functionality to allow for multiple stocks.
 
 */
-
-#!/usr/bin/env node
 
 var amqp = require('amqplib/callback_api');
 const readline = require('readline');
