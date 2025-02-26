@@ -55,7 +55,7 @@ const sendOrder = function (username, middleware_endpoint, side, quantity, price
             var queue = 'Orders';
     
             channel.assertQueue(queue, {
-                durable: false
+                durable: true               // updated to ensure messages are not lost after server failure or restart
             }, function(error2, ok) {
                 if (error2) {
                     console.error("Error asserting queue:", error2);
@@ -93,7 +93,7 @@ rl.question('Enter your username: ', (username) => {
                     // Close the readline interface
                     rl.close();
 
-                    // Convert quantity and price to numbers
+                    // Convert price to numbers
                     price = parseFloat(price);
 
                     // Validate input
