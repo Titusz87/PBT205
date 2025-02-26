@@ -1,0 +1,3 @@
+echo "node_modules/" > .gitignore
+echo "public/uploads/*" >> .gitignore
+echo "!public/uploads/.gitkeep" >> .gitignore
